@@ -6,7 +6,7 @@
 
 
 #### About Me
-CS Grad student @UCR, very enthusiastic about the field of Deep Learning, I also enjoy a bit of writing on the side.
+Junior Specialist @UCR, very enthusiastic about the field of Deep Learning, I also enjoy a bit of writing on the side.
 
 
 

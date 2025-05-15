@@ -6,14 +6,14 @@
 
 
 #### About Me
-Junior Specialist @UCR, very enthusiastic about the field of Deep Learning, I also enjoy a bit of writing on the side.
+Junior Specialist at the University of California — working on everything AI-related, from research to implementation.
 
 
 
 ---
 
 
- - 🔭 I’m currently working on ... *Computer Vision Research, Generative Modeling*
+ - 🔭 I’m currently working on ... *Computer Vision Research, Fine-tuning LLMs*
  - 🌱 I’m currently learning ... *...*
  - 💬 Ask me about ... *anything, I'd love to help*
  - 👨‍💻 Languages ... *I primarily work with Python and C++*

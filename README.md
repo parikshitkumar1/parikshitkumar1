@@ -17,7 +17,7 @@ Junior Specialist at the University of California — working on everything AI-r
  - 🌱 I’m currently learning ... *...*
  - 💬 Ask me about ... *anything, I'd love to help*
  - 👨‍💻 Languages ... *I primarily work with Python and C++*
- - 🙋 **CV : [Here](https://drive.google.com/file/d/1DqvMNMkySZtHHqL8Dunw3p86rQzUwIYB/view?usp=sharing)**
+ - 🙋 **CV : [Here](https://drive.google.com/file/d/1xGk78LrGuo7btxVDs2lEWJQa07jBWKgb/view?usp=sharing)**
 
 
 

@@ -1,0 +1,817 @@
+<!doctype html>
+<html lang="en" data-theme="warning" data-mode="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ML Engineer</title>
+        <meta name="description" content="" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&family=Fira+Code:wght@400;500;700&family=JetBrains+Mono:wght@400;600;700&family=Source+Code+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link
+            rel="shortcut icon"
+            href="/assets/logo.png"
+            type="image/png"
+        />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:title" content="Title of the project" />
+        <meta property="og:description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/PaulleDemon" />
+        <!--Replace with the current website url-->
+        <meta property="og:image" content="" />
+
+        <!-- <link rel="stylesheet" href="../../tailwind-css/tailwind-runtime.css"> -->
+        <link rel="stylesheet" href="./css/tailwind-build.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <style>
+            :root {
+                font-family: 'Inter', 'Roboto', 'Open Sans', 'Noto Sans JP', sans-serif;
+                --space-blue: #1976d2;
+                --cyberpunk-pink: #ff2e9a;
+                --cyberpunk-cyan: #00fff7;
+                --cyberpunk-purple: #a259ff;
+                --cyberpunk-yellow: #ffe156;
+                --cyberpunk-bg: linear-gradient(120deg, #0f2027 0%, #2c5364 40%, #1a0033 100%);
+                --cyberpunk-glow: 0 0 8px var(--cyberpunk-cyan), 0 0 16px var(--cyberpunk-pink), 0 0 32px var(--cyberpunk-yellow);
+            }
+            body {
+                background: #000000 !important;
+                color: #ffffff !important;
+                overflow: hidden;
+                background-image: var(--cyberpunk-bg), url('./assets/images/home/bg.jpg');
+                background-blend-mode: lighten, screen;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center center;
+                position: relative;
+            }
+            body::before {
+                content: '';
+                position: fixed;
+                top: 0; left: 0; right: 0; bottom: 0;
+                pointer-events: none;
+                background: repeating-linear-gradient(135deg, rgba(255,46,154,0.12) 0 2px, transparent 2px 12px), repeating-linear-gradient(45deg, rgba(0,255,247,0.10) 0 2px, transparent 2px 12px), radial-gradient(circle at 80% 20%, rgba(255,46,154,0.15) 0 200px, transparent 300px), radial-gradient(circle at 20% 80%, rgba(0,255,247,0.12) 0 200px, transparent 300px);
+                z-index: 0;
+                animation: cyberpunk-bg-move 18s linear infinite alternate;
+            }
+            @keyframes cyberpunk-bg-move {
+                0% { background-position: 0 0, 0 0, 80% 20%, 20% 80%; }
+                100% { background-position: 100px 200px, 200px 100px, 85% 25%, 25% 85%; }
+            }
+            body::after {
+                content: '';
+                position: fixed;
+                top: 0; left: 0; right: 0; bottom: 0;
+                pointer-events: none;
+                background: linear-gradient(90deg, rgba(255,46,154,0.08) 0%, rgba(0,255,247,0.08) 100%);
+                mix-blend-mode: lighten;
+                z-index: 1;
+            }
+            /* Headings and titles in cyberpunk neon */
+            h1, h2, h3, .tw-text-primary, .tw-font-semibold, .tw-text-2xl, .tw-text-3xl, .ml-engineer-heading {
+                font-family: 'Inter', 'Poppins', 'Montserrat', 'Roboto', 'Open Sans', 'Noto Sans JP', sans-serif !important;
+                color: var(--cyberpunk-cyan) !important;
+                text-shadow: 0 0 12px var(--cyberpunk-cyan), 0 0 24px var(--cyberpunk-pink), 0 0 32px var(--cyberpunk-yellow);
+                letter-spacing: 0.08em;
+                font-weight: 700 !important;
+                filter: brightness(1.2) contrast(1.2);
+            }
+            /* Ensure section titles in skills, education, and projects are blue */
+            .tab-content h2,
+            .tab-content h3,
+            .tab-content .tw-text-primary {
+                color: var(--cyberpunk-pink) !important;
+                text-shadow: 0 0 12px var(--cyberpunk-pink), 0 0 24px var(--cyberpunk-cyan), 0 0 32px var(--cyberpunk-yellow);
+                letter-spacing: 0.12em;
+                font-weight: 700 !important;
+                filter: brightness(1.2) contrast(1.2);
+            }
+            /* Body text */
+            body, html, p, div, span, button, a, ul, li, input, select, textarea, label, section, header, main, footer, nav, article, aside, figure, figcaption, blockquote, table, th, td, tr, thead, tbody, tfoot, form, fieldset, legend {
+                font-family: 'Inter', 'Open Sans', 'Roboto', 'Noto Sans JP', sans-serif !important;
+                letter-spacing: 0.04em;
+            }
+            /* Code blocks and inline code */
+            code, pre, .code-block, .tw-code, .tw-pre {
+                font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', 'Menlo', 'Monaco', 'Consolas', monospace !important;
+                font-size: 1em;
+                background: rgba(0,0,0,0.7);
+                color: var(--cyberpunk-yellow);
+                border-radius: 6px;
+                padding: 0.2em 0.5em;
+                letter-spacing: 0.01em;
+            }
+            /* Fix scrolling for tab content */
+            .tab-content {
+                height: auto !important;
+                min-height: 0 !important;
+                overflow-y: auto !important;
+            }
+            .tw-h-\[calc\(100vh-80px\)\] {
+                height: calc(100vh - 80px) !important;
+                overflow-y: auto !important;
+            }
+            .tw-bg-white, .dark\:tw-bg-slate-800 {
+                background: #000000 !important;
+            }
+            .tw-text-black, .tw-text-primary, .tw-border-primary {
+                color: #ffffff !important;
+                border-color: #ffffff !important;
+            }
+            /* Cyberpunk accent for buttons and borders */
+            .btn-primary, .tab-btn.tab-active {
+                background: linear-gradient(90deg, var(--cyberpunk-pink) 0%, var(--cyberpunk-cyan) 100%) !important;
+                color: #fff !important;
+                border-color: var(--cyberpunk-yellow) !important;
+                box-shadow: 0 0 16px var(--cyberpunk-pink), 0 0 32px var(--cyberpunk-cyan);
+                text-shadow: 0 0 8px var(--cyberpunk-yellow);
+                letter-spacing: 0.1em;
+                font-weight: 700;
+                text-transform: uppercase;
+                border-radius: 8px;
+                transition: filter 0.2s, box-shadow 0.2s;
+            }
+            .btn-primary:hover, .tab-btn.tab-active:hover {
+                filter: brightness(1.3) contrast(1.3);
+                box-shadow: 0 0 32px var(--cyberpunk-yellow), 0 0 64px var(--cyberpunk-pink);
+            }
+            .tab-btn {
+                color: var(--cyberpunk-cyan) !important;
+                text-shadow: 0 0 8px var(--cyberpunk-pink);
+                font-weight: 600;
+                border-radius: 6px;
+                transition: filter 0.2s, box-shadow 0.2s;
+            }
+            .tab-btn:hover {
+                filter: brightness(1.2);
+                box-shadow: 0 0 16px var(--cyberpunk-cyan);
+            }
+            .link {
+                color: var(--cyberpunk-pink) !important;
+                text-shadow: 0 0 8px var(--cyberpunk-cyan);
+                font-weight: 600;
+                letter-spacing: 0.08em;
+                transition: color 0.2s, text-shadow 0.2s;
+            }
+            .link:hover {
+                color: var(--cyberpunk-yellow) !important;
+                text-shadow: 0 0 16px var(--cyberpunk-yellow);
+            }
+            .input, select.input {
+                border: 2px solid var(--cyberpunk-cyan) !important;
+                color: #fff !important;
+                background: rgba(0,0,0,0.85) !important;
+                box-shadow: 0 0 16px var(--cyberpunk-pink);
+                border-radius: 6px;
+                font-size: 1.1em;
+                padding: 0.5em 1em;
+                transition: border-color 0.2s, box-shadow 0.2s;
+            }
+            .input:focus, select.input:focus {
+                border-color: var(--cyberpunk-yellow) !important;
+                box-shadow: 0 0 32px var(--cyberpunk-yellow);
+            }
+            .tw-shadow-xl, .lg\:tw-shadow-xl {
+                box-shadow: 0 4px 32px 0 var(--cyberpunk-purple) !important;
+            }
+            .tw-text-gray-800, .dark\:tw-text-gray-300, .tw-text-gray-500, .tw-text-gray-700 {
+                color: var(--cyberpunk-cyan) !important;
+                text-shadow: 0 0 8px var(--cyberpunk-pink);
+            }
+            .tw-border-2 {
+                border-width: 2px !important;
+                border-color: var(--cyberpunk-pink) !important;
+                box-shadow: 0 0 8px var(--cyberpunk-cyan);
+            }
+            /* Neon border for profile image */
+            .tw-h-\[26px\].tw-w-\[26px\].tw-overflow-hidden.tw-rounded-full, .tw-h-\[26px\].tw-w-\[26px\].tw-overflow-hidden.tw-rounded-full img {
+                box-shadow: 0 0 16px 2px var(--cyberpunk-cyan), 0 0 24px 4px var(--cyberpunk-pink), 0 0 16px 4px var(--cyberpunk-yellow);
+                border: 2px solid var(--cyberpunk-pink) !important;
+                animation: neon-flicker 4s infinite alternate;
+            }
+            @keyframes neon-flicker {
+                0%, 100% { filter: brightness(1.1); }
+                45% { filter: brightness(1.2); }
+                50% { filter: brightness(0.9); }
+                55% { filter: brightness(1.3); }
+                60% { filter: brightness(1.05); }
+            }
+            /* Japanese cyberpunk anime background overlay */
+            /* Already handled in body::before and body::after */
+            /* Japanese font accent for greetings */
+            .cyberpunk-jp {
+                font-family: 'Roboto', 'Noto Sans JP', sans-serif !important;
+                font-size: 2.8rem;
+                color: var(--cyberpunk-yellow) !important;
+                letter-spacing: 0.18em;
+                text-shadow: 0 0 18px var(--cyberpunk-cyan), 0 0 32px var(--cyberpunk-pink), 0 0 20px var(--cyberpunk-yellow);
+                margin-bottom: 1.5rem;
+                font-weight: 900;
+                filter: brightness(1.3) contrast(1.3);
+                animation: cyberpunk-jp-glow 3.5s infinite alternate;
+            }
+            @keyframes cyberpunk-jp-glow {
+                0%, 100% { text-shadow: 0 0 18px var(--cyberpunk-cyan), 0 0 32px var(--cyberpunk-pink), 0 0 20px var(--cyberpunk-yellow); }
+                50% { text-shadow: 0 0 32px var(--cyberpunk-yellow), 0 0 48px var(--cyberpunk-pink), 0 0 32px var(--cyberpunk-cyan); }
+            }
+            /* Animated scanlines overlay */
+            body::after {
+                background: repeating-linear-gradient(180deg, rgba(255,255,255,0.04) 0 2px, transparent 2px 6px);
+                mix-blend-mode: lighten;
+                opacity: 0.5;
+                animation: scanlines-move 2.5s linear infinite;
+            }
+            @keyframes scanlines-move {
+                0% { background-position-y: 0; }
+                100% { background-position-y: 8px; }
+            }
+            /* Seizure warning modal styles */
+            #seizure-modal {
+                position: fixed;
+                z-index: 10000;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: #000;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: opacity 0.5s;
+            }
+            #seizure-modal > div {
+                max-width: 90vw;
+                min-width: 320px;
+                padding: 2.5rem 2.2rem 2.2rem 2.2rem;
+                background: rgba(10,10,10,0.98);
+                border-radius: 18px;
+                box-shadow: 0 0 32px var(--cyberpunk-pink), 0 0 64px var(--cyberpunk-cyan);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+            }
+            #seizure-modal .warning-text {
+                font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+                font-size: 1.25rem;
+                color: var(--cyberpunk-yellow);
+                text-shadow: 0 0 18px var(--cyberpunk-cyan), 0 0 32px var(--cyberpunk-pink), 0 0 20px var(--cyberpunk-yellow);
+                font-weight: 900;
+                letter-spacing: 0.12em;
+                text-align: center;
+            }
+            #close-seizure-modal {
+                font-family: 'Roboto', 'Noto Sans JP', sans-serif;
+                font-size: 1.1rem;
+                padding: 0.7em 2.2em;
+                background: linear-gradient(90deg, var(--cyberpunk-pink), var(--cyberpunk-cyan));
+                color: #fff;
+                border: none;
+                border-radius: 8px;
+                box-shadow: 0 0 16px var(--cyberpunk-pink), 0 0 32px var(--cyberpunk-cyan);
+                text-shadow: 0 0 8px var(--cyberpunk-yellow);
+                font-weight: 700;
+                letter-spacing: 0.1em;
+                cursor: pointer;
+                transition: filter 0.2s, box-shadow 0.2s;
+            }
+            #close-seizure-modal:hover {
+                filter: brightness(1.3) contrast(1.3);
+                box-shadow: 0 0 32px var(--cyberpunk-yellow), 0 0 64px var(--cyberpunk-pink);
+            }
+            /* Neon-styled bullet points for all ul/li, including .tw-list-disc */
+            ul, .tw-list-disc {
+                list-style-type: disc !important;
+                padding-left: 1.5em !important;
+            }
+            li, .tw-list-disc li {
+                color: var(--cyberpunk-yellow) !important;
+                text-shadow: 0 0 8px var(--cyberpunk-cyan), 0 0 12px var(--cyberpunk-pink);
+                font-size: 1.05em;
+                margin-bottom: 0.4em;
+                position: relative;
+            }
+            ul, ol {
+                margin-bottom: 1.2em;
+            }
+            ul li::marker, .tw-list-disc li::marker {
+                color: var(--cyberpunk-pink);
+                text-shadow: 0 0 8px var(--cyberpunk-cyan), 0 0 12px var(--cyberpunk-yellow);
+                font-size: 1.2em;
+            }
+            /* Modal fade-out animation */
+            #seizure-modal.fade-out {
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.5s;
+            }
+        </style>
+    </head>
+    <body
+        class="tw-flex tw-w-full tw-flex-col tw-bg-[#fff] tw-text-black dark:tw-bg-slate-800 dark:tw-text-white tw-h-screen"
+        style="overflow: hidden;"
+    >
+        <!-- Seizure and Epilepsy warning modal overlay -->
+        <div id="seizure-modal" style="position:fixed;z-index:10000;top:0;left:0;width:100vw;height:100vh;background:#000;display:flex;align-items:center;justify-content:center;transition:opacity 0.5s;">
+            <div style="max-width:90vw;min-width:320px;padding:2.5rem 2.2rem 2.2rem 2.2rem;background:rgba(10,10,10,0.98);border-radius:18px;box-shadow:0 0 32px var(--cyberpunk-pink),0 0 64px var(--cyberpunk-cyan);display:flex;flex-direction:column;align-items:center;gap:2rem;">
+                <div class="warning-text" style="font-size:1.25rem;color:var(--cyberpunk-yellow);text-shadow:0 0 18px var(--cyberpunk-cyan),0 0 32px var(--cyberpunk-pink),0 0 20px var(--cyberpunk-yellow);font-weight:900;letter-spacing:0.12em;text-align:center;">
+                    ⚠️ Seizure and Epilepsy Warning<br>
+                    This site contains animated flashing lights and neon effects.<br>
+                    If you are sensitive to such visuals, including those with epilepsy, please proceed with caution.
+                </div>
+                <button id="close-seizure-modal" style="font-size:1.1rem;padding:0.7em 2.2em;background:linear-gradient(90deg,var(--cyberpunk-pink),var(--cyberpunk-cyan));color:#fff;border:none;border-radius:8px;box-shadow:0 0 16px var(--cyberpunk-pink),0 0 32px var(--cyberpunk-cyan);text-shadow:0 0 8px var(--cyberpunk-yellow);font-weight:700;letter-spacing:0.1em;cursor:pointer;transition:filter 0.2s,box-shadow 0.2s;">
+                    Enter Site
+                </button>
+            </div>
+            <div class="update-note" style="position:absolute;bottom:2.5vh;left:0;width:100vw;text-align:center;font-size:1.05rem;color:var(--cyberpunk-cyan);text-shadow:0 0 8px var(--cyberpunk-pink),0 0 12px var(--cyberpunk-yellow);letter-spacing:0.08em;pointer-events:none;user-select:none;">
+                Updated: June 2025
+            </div>
+        </div>
+
+        <main
+            class="tw-flex tw-w-full tw-h-full tw-overflow-hidden max-lg:tw-flex-col"
+        >
+            <section
+                class="tw-flex tw-h-auto tw-w-[450px] tw-flex-col tw-place-items-center tw-gap-4 tw-p-4 max-lg:tw-w-full lg:tw-shadow-xl lg:dark:tw-shadow-gray-600"
+            >
+                <!-- sidebar -->
+                <div
+
+                class="tw-h-[26px] tw-w-[26px] tw-overflow-hidden tw-rounded-full"
+                >
+                    <img
+                        src="./assets/logo.png"
+                        class="tw-h-full tw-w-full tw-object-cover tw-rounded-full"
+                        alt="Parikshit Kumar"
+                        srcset=""
+                    />
+                </div>
+
+                <h1 class="tw-text-3xl tw-font-semibold">Parikshit Kumar</h1>
+                <div class="cyberpunk-jp" style="font-size:1.3rem; margin-bottom:0.5rem;">パリクシット・クマール</div>
+
+                <p
+                    class="tw-mt-6 tw-max-w-[350px] tw-text-center tw-text-primary"
+                >
+                    Machine Learning & Computer Vision | Data Science | Building useful AI for real-world impact
+                </p>
+
+                <div class="tw-mt-5 tw-flex tw-gap-5 tw-text-2xl">
+                    <a href="https://github.com/parikshitkumar1" class="link" title="GitHub" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/parikshitkumar1" class="link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a href="mailto:mr.kumar.parikshit@gmail.com" class="link" title="Email">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </a>
+                    <a href="https://drive.google.com/file/d/1QddFLxtug6JCPMqiOxnJDYP40Grbsc_6/view?usp=sharing" class="link" title="Resume" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-file-earmark-text-fill"></i>
+                    </a>
+                </div>
+            </section>
+
+            <div class="tw-h-full tw-w-full tw-overflow-hidden">
+                <header
+                    class="tw-relative tw-flex tw-w-full tw-overflow-hidden tw-p-2 max-lg:tw-h-[150px] max-lg:tw-flex-col lg:tw-h-[80px]"
+                >
+                    <!-- tabs section -->
+                    <div
+                        class="tw-absolute tw-left-[50%] tw-top-4 tw-flex tw-h-[60px] tw-translate-x-[-50%] tw-gap-4 tw-overflow-x-auto tw-rounded-md tw-border-2 tw-border-primary tw-p-1 tw-px-4 max-md:tw-w-full md:tw-w-fit"
+                    >
+                        <button
+                            class="tab-btn tab-active"
+                            onclick="openTab(event, 'about')"
+                        >
+                            About
+                        </button>
+                        <button
+                            class="tab-btn"
+                            onclick="openTab(event, 'skills')"
+                        >
+                            Skills
+                        </button>
+                        <button
+                            class="tab-btn"
+                            onclick="openTab(event, 'experience')"
+                        >
+                            Experience
+                        </button>
+                        <button
+                            class="tab-btn"
+                            onclick="openTab(event, 'projects')"
+                        >
+                            Projects
+                        </button>
+                        <button
+                            class="tab-btn"
+                            onclick="openTab(event, 'organizations')"
+                        >
+                            Organizations
+                        </button>
+                        <button
+                            class="tab-btn"
+                            onclick="openTab(event, 'education')"
+                        >
+                            Education
+                        </button>
+                    </div>
+
+                    <div
+                        class="tw-m-2 tw-ml-auto tw-flex tw-place-items-center tw-gap-2 max-lg:tw-mt-auto"
+                    >
+                        <select
+                            onchange="switchTheme()"
+                            id="theme-selector"
+                            class="input !tw-h-fit !tw-p-1 tw-text-black dark:tw-text-white"
+                        >
+                            <option value="primary">Primary</option>
+                            <option value="warning" selected>warning</option>
+                            <option value="success">success</option>
+                        </select>
+
+                        <button class="tw-w-[30px]" onclick="toggleMode()">
+                            <i class="bi bi-sun-fill" id="toggle-mode-icon"></i>
+                        </button>
+                    </div>
+                </header>
+
+                <!-- tab contents -->
+                <div class="tw-h-[calc(100vh-80px)] tw-overflow-y-auto">
+                    <div class="tw-min-h-full">
+                        <section
+                            class="tab-content tw-relative tw-flex tw-w-full tw-flex-col max-lg:tw-p-4"
+                            data-tab-name="about"
+                        >
+                            <div
+                                class="tw-flex tw-h-full tw-w-full tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-flex-col"
+                            >
+                                <div class="tw-flex tw-flex-col tw-place-content-center">
+                                    <div class="tw-text-3xl tw-font-semibold tw-leading-[40px] max-lg:tw-text-xl max-md:tw-leading-snug tw-text-primary cyberpunk-jp">
+                                        こんにちは
+                                    </div>
+                                    <div class="tw-mt-4 tw-max-w-[650px] tw-p-2 tw-text-justify max-lg:tw-max-w-full about-cyberpunk" style="font-size:1.3em;line-height:1.7;position:relative;">
+                                        <p>
+                                            I am a computer vision and machine learning specialist with an M.S. in Computer Science from UC Riverside (Dec 2024). My work bridges advanced research and practical AI deployment, with a focus on deep learning, biological feature extraction, and real-world computer vision systems. At UC Riverside's tribe Lab, I led and contributed to projects in image analysis, classification, and interdisciplinary scientific collaboration. My approach combines rigorous academic foundations with hands-on experience, delivering innovative, production-ready solutions in AI and data science.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section
+                            class="tab-content tw-relative tw-flex tw-hidden tw-w-full tw-flex-col tw-overflow-y-auto max-lg:tw-p-4"
+                            data-tab-name="skills"
+                        >
+                            <div class="tw-flex tw-h-full tw-w-full tw-flex-col tw-gap-6 tw-p-[5%] max-lg:tw-px-[10%] max-md:tw-px-2">
+                                <div>
+                                    <h3 class="tw-text-2xl tw-font-semibold tw-text-primary tw-mb-4">Technical Skills</h3>
+                                    <div class="tw-mt-2 tw-grid tw-grid-cols-3 tw-gap-x-6 tw-gap-y-2 max-md:tw-grid-cols-2">
+                                        <p>Deep Learning</p>
+                                        <p>NLP</p>
+                                        <p>LLMs</p>
+                                        <p>Computer Vision</p>
+                                        <p>Generative Modeling</p>
+                                        <p>Diffusion Models</p>
+                                        <p>Machine Learning</p>
+                                        <p>Reinforcement Learning</p>
+                                        <p>Data Analysis</p>
+                                        <p>Data Visualization</p>
+                                        <p>Statistics</p>
+                                        <p>Python</p>
+                                        <p>C++</p>
+                                        <p>C</p>
+                                        <p>Keras</p>
+                                        <p>TensorFlow</p>
+                                        <p>PyTorch</p>
+                                        <p>PyTorch Lightning</p>
+                                        <p>FastAI</p>
+                                        <p>OpenCV</p>
+                                        <p>Numpy</p>
+                                        <p>Matplotlib</p>
+                                        <p>Pandas</p>
+                                        <p>Hugging Face</p>
+                                        <p>SQL</p>
+                                        <p>Flask</p>
+                                        <p>BeautifulSoup</p>
+                                        <p>Graph Neural Networks</p>
+                                        <p>XGBoost</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h3 class="tw-text-2xl tw-font-semibold tw-text-primary tw-mb-4">Tools & Platforms</h3>
+                                    <div class="tw-mt-2 tw-grid tw-grid-cols-3 tw-gap-x-6 tw-gap-y-2 max-md:tw-grid-cols-2">
+                                        <p>Tableau</p>
+                                        <p>MLOps</p>
+                                        <p>GCP</p>
+                                        <p>AWS</p>
+                                        <p>Kubernetes</p>
+                                        <p>Docker</p>
+                                        <p>Git CLI</p>
+                                        <p>Jupyter Notebooks</p>
+                                        <p>Anaconda</p>
+                                        <p>Linux Terminal</p>
+                                        <p>ROS</p>
+                                        <p>CUDA</p>
+                                        <p>MPS (Apple)</p>
+                                        <p>Apache Spark</p>
+                                        <p>Tensorboard</p>
+                                        <p>Firebase</p>
+                                        <p>MS Azure</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section
+                            class="tab-content tw-relative tw-flex tw-hidden tw-w-full tw-flex-col tw-overflow-y-auto max-lg:tw-p-4"
+                            data-tab-name="experience"
+                        >
+                            <div class="tw-flex tw-flex-col tw-gap-8 tw-p-[5%] max-lg:tw-px-[2%]">
+                                <div class="tw-mb-8">
+                                    <div class="tw-flex tw-max-w-[650px] tw-flex-col tw-gap-2 tw-p-1">
+                                        <h3 class="tw-text-2xl tw-text-primary">Junior Specialist - University of California, Riverside</h3>
+                                        <p class="tw-text-gray-500 dark:tw-text-gray-200">Feb 2025 – Dec 2025</p>
+                                        <ul class="tw-list-disc">
+                                            <li>Engineered deep learning models for mosquito orientation classification, achieving 96% accuracy across four orientations.</li>
+                                            <li>Utilized advanced image processing techniques—including thresholding, edge detection, and morphological transformations—for robust biological feature extraction.</li>
+                                            <li>Integrated model deployment pipelines with interdisciplinary teams, optimizing end-to-end system performance and scalability.</li>
+                                            <li>Enhanced scalability of feature extraction pipelines, ensuring adaptability for future biological studies.</li>
+                                            <li>Documented research findings and contributed to publications, sharing insights with the scientific community.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tw-mb-8">
+                                    <div class="tw-flex tw-max-w-[650px] tw-flex-col tw-gap-2 tw-p-1">
+                                        <h3 class="tw-text-2xl tw-text-primary">Student Assistant, Computer Vision Research - University of California, Riverside</h3>
+                                        <p class="tw-text-gray-500 dark:tw-text-gray-200">Jul 2024 – Dec 2024</p>
+                                        <ul class="tw-list-disc">
+                                            <li>Conducted sensitivity analysis with increased sample sizes, reducing variance by 20% and improving detection accuracy by 30%.</li>
+                                            <li>Collaborated with entomologists to optimize algorithms tailored to specific biological requirements.</li>
+                                            <li>Analyzed mosquito structures in detail using advanced image processing for biological feature extraction.</li>
+                                            <li>Developed preprocessing pipelines to streamline data preparation for deep learning models.</li>
+                                            <li>Provided technical support and training to research team members on computer vision tools and workflows.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tw-mb-8">
+                                    <div class="tw-flex tw-max-w-[650px] tw-flex-col tw-gap-2 tw-p-1">
+                                        <h3 class="tw-text-2xl tw-text-primary">Research Assistant - University of Guelph, Ontario</h3>
+                                        <p class="tw-text-gray-500 dark:tw-text-gray-200">Jan 2023 – Jun 2023</p>
+                                        <ul class="tw-list-disc">
+                                            <li>Utilized image segmentation with LLM-based text analysis to assess soil properties, improving accuracy by 18%.</li>
+                                            <li>Designed an automated application, reducing data processing time by 40% and enhancing indicator detection accuracy by 25%.</li>
+                                            <li>Collaborated with soil scientists to refine model parameters for precise results.</li>
+                                            <li>Integrated feedback from cross-disciplinary teams to ensure model usability for practical applications.</li>
+                                            <li>Co-authored a paper on data-driven soil characterization, contributing to a 15% performance boost.</li>
+                                            <li>Provided training sessions to graduate students, enhancing their understanding of AI applications in environmental research.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tw-mb-8">
+                                    <div class="tw-flex tw-max-w-[650px] tw-flex-col tw-gap-2 tw-p-1">
+                                        <h3 class="tw-text-2xl tw-text-primary">Computer Vision Intern - UT Dallas & IIT Bombay, Remote</h3>
+                                        <p class="tw-text-gray-500 dark:tw-text-gray-200">Mar 2022 – Jul 2022</p>
+                                        <ul class="tw-list-disc">
+                                            <li>Created deep learning algorithms for autonomous vehicles, boosting object detection accuracy by 15% using Faster R-CNN and YOLO.</li>
+                                            <li>Enhanced segmentation accuracy by 20% with 3D simulations, improving off-road vehicle performance.</li>
+                                            <li>Developed a preprocessing pipeline, reducing training time by 25% for large datasets.</li>
+                                            <li>Collaborated with a multidisciplinary team to refine detection algorithms for varied terrain types.</li>
+                                            <li>Integrated machine learning models into real-time applications, optimizing system responsiveness.</li>
+                                            <li>Conducted A/B testing for model iterations, ensuring consistent improvements across evaluation metrics.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tw-mb-8">
+                                    <div class="tw-flex tw-max-w-[650px] tw-flex-col tw-gap-2 tw-p-1">
+                                        <h3 class="tw-text-2xl tw-text-primary">Machine Learning Intern - Indian Institute of Technology, Bombay</h3>
+                                        <p class="tw-text-gray-500 dark:tw-text-gray-200">Jan 2021 – Sept 2022</p>
+                                        <ul class="tw-list-disc">
+                                            <li>Built knowledge curation engines for large datasets by applying ML/NLP techniques, optimizing pipelines to improve search relevancy and information retrieval.</li>
+                                            <li>Analyzed unstructured data to develop classification models, leveraging feature engineering and hyperparameter tuning to enhance model accuracy.</li>
+                                            <li>Designed clustering algorithms for dataset categorization, improving downstream task efficiency and reducing data redundancy.</li>
+                                            <li>Automated anomaly detection in large-scale datasets, achieving a 20% reduction in manual analysis overhead and streamlining data verification processes.</li>
+                                            <li>Optimized indexing strategies in data pipelines, reducing query response times by 35% and improving system performance for real-time queries.</li>
+                                            <li>Conducted performance benchmarking to identify pipeline bottlenecks, implementing solutions to enhance throughput for large datasets.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section
+                            class="tab-content tw-relative tw-flex tw-hidden tw-w-full tw-flex-col tw-overflow-y-auto max-lg:tw-p-4"
+                            data-tab-name="projects"
+                        >
+                            <div class="tw-flex tw-h-full tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-lg:tw-px-[10%] max-md:tw-px-2">
+                                <h2 class="tw-text-2xl tw-font-semibold tw-text-primary">Projects and Papers</h2>
+                                <div>
+                                    <h3 class="tw-text-xl tw-text-primary">Generative Networks and VAEs to Assist Artists - SRM IST, Paper and Project</h3>
+                                    <p class="tw-text-gray-500">Apr 2021 – Jun 2021</p>
+                                    <ul class="tw-list-disc">
+                                        <li>Designed Variational Autoencoders (VAEs) for sketch refinement, improving workflow efficiency by 30% and enhancing creative control.</li>
+                                        <li>Achieved 90.6% accuracy with the CUHK Face Sketch Database, presenting findings at ICCET 2023 in India.</li>
+                                        <li>Implemented advanced techniques to retain finer details in generated images, significantly improving visual fidelity.</li>
+                                        <li>Built a user-friendly interface for artists to seamlessly integrate the model into their creative workflows.</li>
+                                        <li>Collaborated with artists to validate real-world usability, leading to positive feedback on practicality and output quality.</li>
+                                        <li>Contributed to open-source repositories, enabling further enhancements and collaborative research in generative models.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="tw-text-xl tw-text-primary">Energy Price Forecasting Using LSTMs and ARIMA - SATU, Paper and Project</h3>
+                                    <p class="tw-text-gray-500">Apr 2021 – Apr 2021</p>
+                                    <ul class="tw-list-disc">
+                                        <li>Developed LSTM and ARIMA models for energy price forecasting, improving prediction accuracy by 18% for Australian energy datasets.</li>
+                                        <li>Conducted NLP-based trend analysis to identify hidden patterns, providing actionable insights for stakeholders.</li>
+                                        <li>Improved model training speed through data preprocessing techniques, enabling real-time forecasting capabilities.</li>
+                                        <li>Built visual dashboards using Tableau, simplifying interpretation for non-technical decision-makers.</li>
+                                        <li>Presented findings at the AIJR Conference 2022, showcasing the balance between model performance and scalability.</li>
+                                        <li>Delivered comprehensive documentation and datasets for future research, supporting ongoing improvements in price prediction models.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="tw-text-xl tw-text-primary">Anime Aesthetic Transformation with Pix2Pix GAN</h3>
+                                    <p class="tw-text-gray-500">Apr 2021 – Jun 2021</p>
+                                    <ul class="tw-list-disc">
+                                        <li>Utilized Pix2Pix GAN for transforming traditional anime images into enhanced, high-quality artworks.</li>
+                                        <li>Trained the model on a diverse dataset of anime images, achieving superior color correction and detail preservation.</li>
+                                        <li>Implemented an iterative feedback mechanism to refine output aesthetics based on user suggestions.</li>
+                                        <li>Presented the project at a local tech fair, receiving commendations for blending technology and creativity.</li>
+                                        <li>Optimized data preprocessing pipelines, reducing GPU training time by 20% without compromising output quality.</li>
+                                        <li>Collaborated with anime artists to validate output consistency, ensuring practical applicability for creative professionals.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="tw-text-xl tw-text-primary">Optimized Firearm Detection</h3>
+                                    <p class="tw-text-gray-500">Dec 2020 – Feb 2021</p>
+                                    <ul class="tw-list-disc">
+                                        <li>Developed a firearm detection application using OpenCV and YOLOv3, achieving high precision and recall metrics.</li>
+                                        <li>Trained on a custom dataset of images and videos, optimizing the model for real-time security applications.</li>
+                                        <li>Integrated the model with CCTV feeds for real-time detection, enabling proactive security monitoring.</li>
+                                        <li>Optimized inference time through quantization and efficient model pruning, achieving a 25% reduction in latency.</li>
+                                        <li>Tested the model under varying lighting conditions and environmental noise to ensure robust performance.</li>
+                                        <li>Collaborated with security professionals to fine-tune the system for real-world deployment in surveillance systems.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section
+                            class="tab-content tw-relative tw-flex tw-hidden tw-h-full tw-w-full tw-flex-col tw-overflow-y-auto max-lg:tw-p-4"
+                            data-tab-name="organizations"
+                        >
+                            <div class="tw-flex tw-h-full tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-lg:tw-px-[10%] max-md:tw-px-2">
+                                <h2 class="tw-text-3xl tw-font-semibold">Organizations</h2>
+                                <div>
+                                    <h3 class="tw-text-2xl">Next Tech Lab, Member</h3>
+                                    <p class="tw-text-gray-500">Apr 2021 – Jun 2023</p>
+                                    <ul class="tw-list-disc tw-ml-6">
+                                        <li>Led workshops, sharing machine learning expertise and fostering a collaborative learning environment.</li>
+                                        <li>Collaborated with researchers on AI projects in computational biology and machine learning.</li>
+                                        <li>Reviewed recent AI advancements, contributing to the lab's mission in computational biology.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="tw-text-2xl">Team SRMAUV - SRM Autonomous Underwater Vehicle, Member</h3>
+                                    <ul class="tw-list-disc tw-ml-6">
+                                        <li>Contributed to Autonomous Underwater Vehicle (AUV) development, using ROS for integration.</li>
+                                        <li>Engineered algorithms for pathfinding and object detection in underwater environments.</li>
+                                        <li>Worked in a multidisciplinary team to optimize AUV performance for marine exploration.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section
+                            class="tab-content tw-relative tw-flex tw-hidden tw-h-full tw-w-full tw-flex-col tw-overflow-y-auto max-lg:tw-p-4"
+                            data-tab-name="education"
+                        >
+                            <div class="tw-flex tw-h-full tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-lg:tw-px-[10%] max-md:tw-px-2">
+                                <h2 class="tw-text-3xl tw-font-semibold tw-text-primary">Education</h2>
+                                <div>
+                                    <h3 class="tw-text-2xl tw-text-primary">Master of Science, Computer Science - UC Riverside</h3>
+                                    <p class="tw-text-gray-500">09/2023 – 05/2024 | GPA: 3.6</p>
+                                </div>
+                                <div>
+                                    <h3 class="tw-text-2xl tw-text-primary">Bachelor of Technology, Computer Science - SRM IST</h3>
+                                    <p class="tw-text-gray-500">2019 – 05/2023 | GPA: 4.0</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <footer
+                        class="tw-mt-auto tw-flex tw-w-full tw-justify-end tw-items-center tw-gap-3 tw-p-4 tw-px-8"
+                    ></footer>
+                </div>
+            </div>
+        </main>
+
+        <!-- Cyberpunk anime-themed sounds -->
+        <audio id="cyberpunk-ambient" src="https://cdn.pixabay.com/audio/2022/10/16/audio_12b5b6b6b2.mp3" loop preload="auto"></audio>
+        <audio id="cyberpunk-modal-close" src="https://cdn.pixabay.com/audio/2022/10/16/audio_12b5b6b6b3.mp3" preload="auto"></audio>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var modal = document.getElementById('seizure-modal');
+            var closeBtn = document.getElementById('close-seizure-modal');
+            var ambient = document.getElementById('cyberpunk-ambient');
+            var modalClose = document.getElementById('cyberpunk-modal-close');
+            // Prevent scroll while modal is open
+            document.body.style.overflow = 'hidden';
+            closeBtn.addEventListener('click', function() {
+                modal.classList.add('fade-out');
+                setTimeout(function() {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = '';
+                    // Play modal close sound
+                    if (modalClose) {
+                        modalClose.currentTime = 0;
+                        modalClose.volume = 0.5;
+                        modalClose.play();
+                    }
+                    // Start ambient loop
+                    if (ambient) {
+                        ambient.volume = 0.18;
+                        ambient.play();
+                    }
+                }, 500);
+            });
+            // Optionally pause ambient on modal open (refresh)
+            if (ambient) ambient.pause();
+        });
+    </script>
+    <script>
+(function() {
+    // Sound elements
+    var ambient = document.getElementById('cyberpunk-ambient');
+    var modalClose = document.getElementById('cyberpunk-modal-close');
+    // Add a new short cyberpunk click sound
+    var clickSound = document.createElement('audio');
+    clickSound.src = 'https://cdn.pixabay.com/audio/2022/10/16/audio_12b5b6b6b3.mp3';
+    clickSound.preload = 'auto';
+    clickSound.volume = 0.22;
+    document.body.appendChild(clickSound);
+
+    // Play ambient after modal closes
+    document.addEventListener('DOMContentLoaded', function() {
+        var modal = document.getElementById('seizure-modal');
+        var closeBtn = document.getElementById('close-seizure-modal');
+        if (ambient) ambient.pause();
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function() {
+                modal.classList.add('fade-out');
+                setTimeout(function() {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = '';
+                    // Play modal close sound
+                    if (modalClose) {
+                        modalClose.currentTime = 0;
+                        modalClose.volume = 0.5;
+                        modalClose.play();
+                    }
+                    // Start ambient loop
+                    if (ambient) {
+                        ambient.volume = 0.18;
+                        ambient.play();
+                    }
+                }, 500);
+        }
+    });
+
+    // Play click sound on every click (except modal close)
+    document.addEventListener('click', function(e) {
+        // Don't play on modal close button (already handled)
+        if (e.target && e.target.id === 'close-seizure-modal') return;
+        // Don't play if modal is still open
+        var modal = document.getElementById('seizure-modal');
+        if (modal && modal.style.display !== 'none' && !modal.classList.contains('fade-out')) return;
+        // Play click sound
+        if (clickSound) {
+            clickSound.currentTime = 0;
+            clickSound.play();
+        }
+    }, true);
+})();
+</script>
+</html>

@@ -1,8 +1,6 @@
-# 👾 Parikshit Kumar | パリクシット・クマール
-
+# 👾 Parikshit Kumar 
 **Machine Learning Engineer | Computer Vision | Data Science**
 
-こんにちは！
 
 M.S. in Computer Science (UC Riverside, Dec 2024). I build real-world AI and computer vision systems, blending research and production.
 

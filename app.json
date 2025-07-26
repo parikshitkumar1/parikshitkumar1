@@ -1,0 +1,11 @@
+{
+  "name": "Ergonomic Ceramic Table",
+  "version": "4.11.17",
+  "description": "Tametsi depulso aiunt sodalitas attollo.",
+  "author": "Krista Schamberger",
+  "config": {
+    "transmitter": true,
+    "application": 241130401322917,
+    "panel": "sequi concedo aequitas"
+  }
+}

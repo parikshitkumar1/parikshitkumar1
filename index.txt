@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eaque vaco dolor</title>
+</head>
+<body>
+    <div class="interface">
+        <h1>defetiscor testimonium communis</h1>
+        <p>Utroque animi vergo cimentarius acerbitas decet cohibeo casso accusamus. Confero nobis accusamus curriculum ratione sophismata delectatio. Patrocinor cattus turba vulnus auditor vorax via cunctatio demergo.</p>
+        <button onclick="generate()">molestiae odio placeat</button>
+    </div>
+</body>
+</html>

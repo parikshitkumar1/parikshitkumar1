@@ -1,0 +1,11 @@
+{
+  "name": "Oriental Steel Shoes",
+  "version": "6.18.13",
+  "description": "Attonbitus sui vestigium cumque.",
+  "author": "Dr. Mercedes Hayes",
+  "config": {
+    "port": true,
+    "pixel": 58764759994224,
+    "panel": "corpus vita una"
+  }
+}

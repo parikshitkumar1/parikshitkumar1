@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ventosus voluptate correptius</title>
+</head>
+<body>
+    <div class="application">
+        <h1>amplexus celer decor</h1>
+        <p>Quasi ulciscor suadeo tendo adulescens. Enim acerbitas arguo. Admitto abstergo aspernatur.</p>
+        <button onclick="program()">damno tum amiculum</button>
+    </div>
+</body>
+</html>

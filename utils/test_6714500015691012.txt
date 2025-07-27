@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arceo quo adfectus</title>
+</head>
+<body>
+    <div class="firewall">
+        <h1>tepidus aduro vulgaris</h1>
+        <p>Decens vero laboriosam sublime conculco conqueror conitor vestigium delinquo. Curto fuga aggero sumo compello. Atavus consectetur tamdiu capio exercitationem.</p>
+        <button onclick="hack()">sursum aspernatur deporto</button>
+    </div>
+</body>
+</html>

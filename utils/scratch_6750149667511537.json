@@ -1,0 +1,11 @@
+{
+  "name": "Tasty Steel Bike",
+  "version": "2.13.8",
+  "description": "Tempora cura cohaero coadunatio validus thesis sol repellendus suus venia.",
+  "author": "Margie Cummings",
+  "config": {
+    "driver": true,
+    "transmitter": 5707293003221146,
+    "matrix": "non coniecto thorax"
+  }
+}

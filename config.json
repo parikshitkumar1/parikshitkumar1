@@ -1,0 +1,11 @@
+{
+  "name": "Generic Bronze Chips",
+  "version": "5.18.8",
+  "description": "Cenaculum aliqua abeo.",
+  "author": "Manuel Bednar",
+  "config": {
+    "microchip": false,
+    "bus": 1298614588684791,
+    "interface": "depraedor vesica sperno"
+  }
+}

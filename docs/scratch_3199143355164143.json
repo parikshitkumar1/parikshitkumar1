@@ -1,0 +1,11 @@
+{
+  "name": "Unbranded Marble Computer",
+  "version": "0.16.17",
+  "description": "Uberrime spiritus defessus vulgivagus.",
+  "author": "Ms. Courtney Nikolaus",
+  "config": {
+    "bus": true,
+    "card": 7830984989710084,
+    "program": "sui tumultus capto"
+  }
+}

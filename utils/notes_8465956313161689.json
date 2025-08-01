@@ -1,0 +1,11 @@
+{
+  "name": "Recycled Gold Soap",
+  "version": "1.8.11",
+  "description": "Surculus cresco arx verbera currus ara.",
+  "author": "Kenny Johnson",
+  "config": {
+    "monitor": false,
+    "capacitor": 4777137560132240,
+    "bandwidth": "tabella summopere benigne"
+  }
+}

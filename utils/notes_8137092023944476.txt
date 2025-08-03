@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aedificium caute deduco</title>
+</head>
+<body>
+    <div class="interface">
+        <h1>creber distinctio cubitum</h1>
+        <p>Delectatio paens vigilo vomer denuo annus pecco velit volva. Sono dolorem summa. Tolero angulus incidunt tametsi carpo aveho adstringo tersus.</p>
+        <button onclick="calculate()">amitto sol celer</button>
+    </div>
+</body>
+</html>

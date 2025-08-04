@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comprehendo crur ut</title>
+</head>
+<body>
+    <div class="application">
+        <h1>vesco sumo at</h1>
+        <p>Fugit deinde non numquam turba vomito vivo compello celer talus. Culpa adaugeo ambitus. Adulatio tunc possimus teneo asper repellat volva odio amissio.</p>
+        <button onclick="input()">coruscus impedit cultellus</button>
+    </div>
+</body>
+</html>

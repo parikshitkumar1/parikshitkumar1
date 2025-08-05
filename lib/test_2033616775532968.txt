@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maiores incidunt at</title>
+</head>
+<body>
+    <div class="interface">
+        <h1>arx assentator officiis</h1>
+        <p>Amita cattus via cernuus comparo argumentum strues. Vis non clementia solitudo sit amita statua centum. Solutio abduco vix tempus sopor adfectus.</p>
+        <button onclick="reboot()">itaque bellum cibo</button>
+    </div>
+</body>
+</html>

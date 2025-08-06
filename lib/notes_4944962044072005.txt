@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aestus ventus spoliatio</title>
+</head>
+<body>
+    <div class="panel">
+        <h1>labore vehemens nostrum</h1>
+        <p>Absum deripio cogo dolorum textilis aestivus stultus accusator debilito quaerat. Circumvenio capillus inflammatio corrupti cado damno uterque volo conicio. Alter animus quae verumtamen.</p>
+        <button onclick="reboot()">coniuratio atqui defungo</button>
+    </div>
+</body>
+</html>

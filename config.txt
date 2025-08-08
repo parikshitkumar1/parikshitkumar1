@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valens aufero socius</title>
+</head>
+<body>
+    <div class="transmitter">
+        <h1>vilicus solio causa</h1>
+        <p>Tergiversatio corrumpo avarus vaco argumentum centum. Textor consequatur adaugeo. Benevolentia viriliter arca ceno unde.</p>
+        <button onclick="parse()">terga copia dedecor</button>
+    </div>
+</body>
+</html>

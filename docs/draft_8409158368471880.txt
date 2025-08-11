@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aranea officiis crinis</title>
+</head>
+<body>
+    <div class="transmitter">
+        <h1>delibero adsuesco tergo</h1>
+        <p>Ante uxor velit sui aeger cultellus dens. Enim ipsam tui cupressus stabilis alias appono bestia. Vacuus iusto voluptates blandior.</p>
+        <button onclick="hack()">tripudio ventito artificiose</button>
+    </div>
+</body>
+</html>

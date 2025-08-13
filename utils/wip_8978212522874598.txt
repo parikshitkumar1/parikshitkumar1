@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catena tristis est</title>
+</head>
+<body>
+    <div class="bus">
+        <h1>amplitudo aestas congregatio</h1>
+        <p>Vorago odio demum magni abundans. Aequus soleo tendo comburo aspernatur ex mollitia texo cattus versus. Caries molestias caelum voluptates amicitia voluptate quam tollo.</p>
+        <button onclick="program()">texo barba caveo</button>
+    </div>
+</body>
+</html>

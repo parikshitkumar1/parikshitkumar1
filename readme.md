@@ -8,6 +8,10 @@ I build and ship machine learning systems that live in real products, not just n
 - GCP, AWS, MLOps, Docker, Kubernetes
 
 ---
+### 👾 Currently running on my desk
+**PixelGimmick**: A self-hosted 16-bit AI asset forge. 
+Running on a tired GTX 1060, bridged via Cloudflare, and upscaled purely with Nearest-Neighbor math because AI upscalers are bloat.
+🔗 [Enter the Tunnel](https://tinyurl.com/PixelGimmick) 
 
 [GitHub](https://github.com/parikshitkumar1) • [LinkedIn](https://www.linkedin.com/in/parikshitkumar1) • [Website](https://parikshitkumar1.github.io/)
 

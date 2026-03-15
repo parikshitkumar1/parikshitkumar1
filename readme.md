@@ -1,5 +1,5 @@
 # Parikshit Kumar  
-**Engineering is applied philosophy - Bard**
+**"Engineering is applied philosophy" - Bard**
 
 I build and ship machine learning systems that live in real products, not just notebooks. My work spans generative models, computer vision and data platforms from early prototypes through to production rollouts.
 
